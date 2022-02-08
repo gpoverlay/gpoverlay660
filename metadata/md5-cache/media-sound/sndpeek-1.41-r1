@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=app-eselect/eselect-sndpeek media-libs/freeglut virtual/glu virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXmu media-libs/libsndfile jack? ( virtual/jack ) alsa? ( media-libs/alsa-lib )
+DESCRIPTION=real-time audio visualization
+EAPI=7
+HOMEPAGE=http://soundlab.cs.princeton.edu/software/sndpeek/
+IUSE=+alsa jack oss
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=app-eselect/eselect-sndpeek media-libs/freeglut virtual/glu virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXmu media-libs/libsndfile jack? ( virtual/jack ) alsa? ( media-libs/alsa-lib )
+REQUIRED_USE=|| ( alsa jack oss )
+SLOT=0
+SRC_URI=http://soundlab.cs.princeton.edu/software/sndpeek/files/sndpeek-1.41.tgz
+_eclasses_=multilib	de4beb52bfa93c4c5d96792a6b5e1784	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
+_md5_=f78db55b1ce6876ed1026416f910c370
